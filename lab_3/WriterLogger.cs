@@ -13,7 +13,7 @@ namespace lab_3
 
         public virtual void Log(params string[] messages)
         {
-            // Uzupełnić to miejsce o logikę zapisu opartą o TextWriter ...
+          
         }
 
         public abstract void Dispose();

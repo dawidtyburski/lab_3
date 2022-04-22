@@ -9,8 +9,8 @@ using System.Net.Sockets;
 
 namespace lab_3
 {
-       public class ClientSocket
-       {
+    public class ClientSocket
+    {
         private bool disposed;
 
         private Socket socket;
@@ -82,5 +82,5 @@ namespace lab_3
             GC.SuppressFinalize(this);
         }
     }
-    
+
 }

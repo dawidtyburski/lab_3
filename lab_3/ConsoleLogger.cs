@@ -13,7 +13,24 @@ namespace lab_3
         public override void Log(params string[] messages)
         {
             writer = Console.Out;
-            writer.Write("123");
+            for (int i = 0; i < messages.Length; i++)
+            {
+                DateTime dt = DateTime.Now;
+                string s = dt.ToString("yyyy-MM-ddTHH:mm:sszzz: ");
+                if (i < 1)
+                {
+                    writer.Write(s);
+                }
+                writer.Write($"{messages[i]} ");
+
+                if (messages.Length == 1)
+                {
+                    writer.WriteLine();
+                    return;
+                }
+                else
+                    continue;
+            }
             writer.Flush();
         }
         public override void Dispose()
